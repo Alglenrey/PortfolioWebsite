@@ -339,7 +339,7 @@ html {
     justify-content: center;
     align-items: center;
     height: 160px;
-    background-color: rgba(40, 40, 40, 0.15); /* lighter transparency */
+    background-color: rgba(40, 40, 40, 0.15); 
     z-index: 1;
 }
 
