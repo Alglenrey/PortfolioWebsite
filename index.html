@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> AL's Portfolio Website</title>
+  <link rel="stylesheet" href="main.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="intro-screen" id="intro-screen">
+    <img src="assets/logo.gif" alt="Loading Logo" class="intro-logo" />
+  </div>
+  
+  <nav class="navigation-bar hidden" id="main-nav">
+    <ul class = "logo">
+      <img src="assets/logo.gif" alt="Logo" class="logo" />
+    </ul>
+    <ul class="navigation">
+      <li class="navigation__item navigation__item--active"><a href="#hero">Home</a></li>
+      <li class="navigation__item"><a href="#about">About</a></li>
+      <li class="navigation__item"><a href="#projects">Projects</a></li>
+      <li class="navigation__item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="site-content">
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+      <div class="canvas">
+        <canvas class="connecting-dots"></canvas>
+      </div>
+      <div class="heading">
+        <div class="heading__line-1">Hello, I'm <span>Al Glenrey Tilacas</span></div>
+        <div class="heading__line-2">CS Student | Aspiring UI/UX & Front-End Developer</div>
+      </div>
+    </div>
+
+    <div class="main-bg">
+      <div class="canvas">
+        <canvas class="canvas-2"></canvas>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2 class="about__heading section-heading">About</h2>
+      <div class="about__content">
+        <div class="profile">
+
+          <p class="profile__info">I'm Al Glenrey Tilacas, a third-year Computer Science student. I focus on front-end development and UI/UX because I like building interfaces that make sense, not just visually but also in how they feel to use. I'm drawn to design that respects users and development that’s mindful of context. For me, it's not just about writing code. It's about making tech more accessible, thoughtful, and human-centered..</p>
+        </div>
+
+        <div class="skills">
+          <div class="skills__row">
+            <div class="skills__item skills__item--html">
+              <img src="assets/html.png" alt="HTML" />
+              <div class="skills__item-name">HTML</div>
+            </div>
+            <div class="skills__item skills__item--flutter">
+              <img src="assets/flutter.png" alt="Flutter" />
+              <div class="skills__item-name">Flutter</div>
+            </div>
+            <div class="skills__item skills__item--python">
+              <img src="assets/python.png" alt="Python" />
+              <div class="skills__item-name"></div>
+            </div>
+          </div>
+          <div class="skills__row">
+            <div class="skills__item skills__item--js">
+              <img src="assets/javascript.png" alt="JavaScript" />
+              <div class="skills__item-name">JavaScript</div>
+            </div>
+            <div class="skills__item skills__item--css">
+              <img src="assets/css.png" alt="CSS" />
+              <div class="skills__item-name">CSS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+<section class="projects" id="projects">
+  <h2 class="projects__heading section-heading">Projects</h2>
+
+  <!-- Project 1 (Left) -->
+  <div class="project project-left">
+      <div class="project__image-container">
+        <img src="assets/smartcy.png" alt="Smart CY" />
+      </div>
+    </a>
+    <div class="project__info">
+      <h3 class="project__title">Smart CY<br />Container Organization App</h3>
+      <p class="project__description">A full-stack social media platform using React, Node.js, MongoDB, Socket.io, AWS S3.</p>
+    </div>
+  </div>
+
+  <!-- Project 2 (Right) -->
+  <div class="project project-right">
+      <div class="project__image-container">
+        <img src="assets/tigom.png" alt="Tigom" />
+      </div>
+    </a>
+    <div class="project__info">
+      <h3 class="project__title">Smart CY<br />Container Organization App</h3>
+      <p class="project__description">A full-stack social media platform using React, Node.js, MongoDB, Socket.io, AWS S3.</p>
+    </div>
+  </div>
+  
+  <!-- Project 3 (Left) -->
+  <div class="project project-left">
+    <div class="project__image-container">
+      <img src="assets/cooking.png" alt="Smart CY" />
+    </div>
+  </a>
+  <div class="project__info">
+    <h3 class="project__title">Smart CY<br />Container Organization App</h3>
+    <p class="project__description">A full-stack social media platform using React, Node.js, MongoDB, Socket.io, AWS S3.</p>
+  </div>
+</div>
+  
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="contact__heading section-heading">Contact</h2>
+      <p class="contact__text">Whether you have a question or simply want to connect, feel free to reach out. I’ll do my best to respond as soon as possible.</p>
+      <form class="contact__form" action="https://formspree.io/f/xdoprgpv" method="POST">
+        <input class="contact__form-name" name="name" placeholder="Name" />
+        <input class="contact__form-email" type="email" name="_replyto" placeholder="Email" />
+        <textarea class="contact__form-message" name="message" placeholder="Message"></textarea>
+        <div class="contact__form-error-submit">
+          <div class="form-error">
+            <div class="form-error__name">Please enter your name.</div>
+            <div class="form-error__email">Please enter a valid email address.</div>
+            <div class="form-error__msg">Please enter a message.</div>
+          </div>
+          <button type="submit" class="contact__form-submit-2 project__live-2" id="form-submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="#hero">
+        <div class="return-home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24">
+            <path fill="#fafafa" d="M17.707 10.293l-5-5c-.391-.391-1.024-.391-1.414 0l-5 5a1 1 0 001.414 1.414L12 7.414l4.293 4.293a1 1 0 001.414-1.414zM17.707 17.293l-5-5a1 1 0 00-1.414 0l-5 5a1 1 0 001.414 1.414L12 13.414l4.293 4.293a1 1 0 001.414-1.414z"/>
+          </svg>
+        </div>
+      </a>
+      <div class="socials">
+        <a href="#" target="_blank"><div class="socials__github"><img src="assets/git.png" alt="GitHub" /></div></a>
+        <a href="mailto:aatilacas@up.edu.ph" target="_blank"><div class="socials__email"><img src="assets/email.png" alt="Email" /></div></a>
+      </div>
+      <p class="copyright">AL GLENREY TILACAS</p>
+    </footer>
+  </div>
+  
+</body>
+</html>
