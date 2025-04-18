@@ -20011,42 +20011,7 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
             rootMargin: "0px",
             threshold: .2
         }).observe(document.querySelector("#projects"));
-        const s = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        document.querySelector("#form-submit").addEventListener("click", ( () => {
-            const e = document.querySelector(".contact__form-name")
-              , t = document.querySelector(".contact__form-email")
-              , n = document.querySelector(".contact__form-message")
-              , r = e.value
-              , o = t.value
-              , u = n.value
-              , i = document.querySelector(".form-error__name")
-              , a = document.querySelector(".form-error__email")
-              , c = document.querySelector(".form-error__msg");
-            let l = !1
-              , p = !1
-              , d = !1;
-            r ? (l = !0,
-            e.classList.remove("input-error"),
-            i.style.display = "none") : (l = !1,
-            e.classList.add("input-error"),
-            i.style.display = "block"),
-            o.match(s) ? (p = !0,
-            t.classList.remove("input-error"),
-            a.style.display = "none") : (p = !1,
-            t.classList.add("input-error"),
-            a.style.display = "block"),
-            u ? (d = !0,
-            n.classList.remove("input-error"),
-            c.style.display = "none") : (d = !1,
-            n.classList.add("input-error"),
-            c.style.display = "block"),
-            l && p && d && (document.querySelector(".contact__form").submit(),
-            new Promise((e => setTimeout(e, 1500))).then(( () => {
-                document.querySelector(".contact__form").reset()
-            }
-            )))
-        }
-        ))
+        
     }
 
     )()
