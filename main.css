@@ -261,6 +261,11 @@ html {
     letter-spacing: 3px;
     z-index: 9;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    color: #fafafa;
+    border: none;
+    outline: none;
   }
   .contact__form-submit:hover {
     color: #1a1a1a;
