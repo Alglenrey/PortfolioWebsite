@@ -20103,6 +20103,20 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
       
         sections.forEach(section => observer.observe(section));
       });
+
+      document.querySelector("#form-submit").addEventListener("click", function () {
+        const name = document.querySelector("#contact-name").value;
+        const email = document.querySelector("#contact-email").value;
+        const message = document.querySelector("#contact-message").value;
+      
+        // Ensure all fields are filled before submitting
+        if (name && email && message) {
+          const mailtoLink = `mailto:alglenreyandrintilacas@gmail.com?subject=Contact%20from%20${encodeURIComponent(name)}&body=Email: ${encodeURIComponent(email)}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+          window.location.href = mailtoLink; 
+        } else {
+          alert("Please fill in all the fields.");
+        }
+      });
       
       
       

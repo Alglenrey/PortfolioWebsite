@@ -48,7 +48,9 @@
       <div class="about__content">
         <div class="profile">
 
-          <p class="profile__info">I'm Al Glenrey Tilacas, a third-year Computer Science student. I focus on front-end development and UI/UX because I like building interfaces that make sense, not just visually but also in how they feel to use. I'm drawn to design that respects users and development that’s mindful of context. For me, it's not just about writing code. It's about making tech more accessible, thoughtful, and human-centered..</p>
+          <p class="profile__info">Hi, I’m Al Glenrey Tilacas, a third-year Computer Science student who enjoys working on front-end development and UI/UX design. I like building interfaces that aren’t just nice to look at; they should also feel good to use. I care about design that makes sense and genuinely respects the people using it.
+
+            For me, it’s not just about writing code or building something that works. It’s about creating something that feels right and solves real problems. I want the things I build to make someone’s day a little easier, more intuitive, or even a bit more enjoyable.</p>
         </div>
 
         <div class="skills">
@@ -90,8 +92,8 @@
         <img src="assets/smartcy.png" alt="Smart CY" />
       </div>
     <div class="project__info">
-      <h3 class="project__title">Smart CY<br />Container Organization App</h3>
-      <p class="project__description">A full-stack social media platform using React, Node.js, MongoDB, Socket.io, AWS S3.</p>
+      <h3 class="project__title">Smart CY<br/>Container Yard Management App</h3>
+      <p class="project__description">SMART CY is an Android-based mobile application optimized for tablets, specifically designed to streamline and automate container yard operations. Built using Flutter for the frontend, .NET for backend services, integrated with Firebase Authentication for secure user management, and utilizing MS SQL for reliable cloud-based database operations, SMART CY provides real-time container tracking, efficient transaction management, and increased yard visibility.</p>
     </div>
   </div>
 
@@ -101,8 +103,8 @@
         <img src="assets/tigom.png" alt="Tigom" />
       </div>
     <div class="project__info">
-      <h3 class="project__title">Smart CY<br />Container Organization App</h3>
-      <p class="project__description">A full-stack social media platform using React, Node.js, MongoDB, Socket.io, AWS S3.</p>
+      <h3 class="project__title">TIGOM<br />Money Tracker App</h3>
+      <p class="project__description">A user-friendly personal finance application developed in Swift, integrated with SQL for efficient data management. The app helps users easily track expenses, categorize spending, and manage budgets through intuitive interfaces and reliable database interactions.</p>
     </div>
   </div>
   
@@ -112,8 +114,11 @@
       <img src="assets/cooking.png" alt="Smart CY" />
     </div>
   <div class="project__info">
-    <h3 class="project__title">Smart CY<br />Container Organization App</h3>
-    <p class="project__description">A full-stack social media platform using React, Node.js, MongoDB, Socket.io, AWS S3.</p>
+    <h3 class="project__title">Cooking Ina Mo <br/> FSM Integrated Typing Game</h3>
+    <p class="project__description">An engaging culinary-themed typing game developed using Python and the Pygame library. The game utilizes Finite State Machines (FSMs) to handle dynamic state transitions, managing user interactions as players rapidly type food-related words to prepare dishes in a lively kitchen scenario.
+
+
+</p>
   </div>
 </div>
   
@@ -131,23 +136,6 @@
   
   <button type="button" class="contact__form-submit project__live-2" id="form-submit">Submit</button>
 </section>
-
-<script>
-document.querySelector("#form-submit").addEventListener("click", function () {
-  const name = document.querySelector("#contact-name").value;
-  const email = document.querySelector("#contact-email").value;
-  const message = document.querySelector("#contact-message").value;
-
-  // Ensure all fields are filled before submitting
-  if (name && email && message) {
-    const mailtoLink = `mailto:alglenreyandrintilacas@gmail.com?subject=Contact%20from%20${encodeURIComponent(name)}&body=Email: ${encodeURIComponent(email)}%0D%0A%0D%0A${encodeURIComponent(message)}`;
-
-    window.location.href = mailtoLink; // Open the email client with the prefilled details
-  } else {
-    alert("Please fill in all the fields.");
-  }
-});
-</script>
 
 
     <!-- Footer -->

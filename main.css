@@ -329,7 +329,7 @@ html {
     display: none;
   }
   .input-error {
-    border-left: 2px solid #254441 !important;
+    border-left: 2px solid red !important;
   }
 
 .footer {
