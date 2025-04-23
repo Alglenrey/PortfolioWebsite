@@ -108,7 +108,8 @@ html {
     left: 3.5rem;
     top: 6.3rem;
     z-index: -1;
-    border-bottom: 18px solid #acbfa4;
+    border-bottom: 18px solid #8afc5d
+    ;
   }
   .about__content {
     display: flex;
@@ -130,7 +131,7 @@ html {
   .profile__info {
     margin-top: 7rem;
     font-size: 2rem;
-    width: 600px;
+    width: 500px;
     line-height: 2;
     text-align: justify;
   }
@@ -164,7 +165,8 @@ html {
     border: double 3px transparent;
     border-image-slice: 1;
     border-width: 3px;
-    background-image: linear-gradient(#1a1a1a, #1a1a1a), radial-gradient(circle at top left, #254441, #acbfa4);
+    background-image: linear-gradient(#1a1a1a, #1a1a1a), radial-gradient(circle at top left, #254441, #8afc5d
+    );
     border-radius: 10px;
     background-origin: border-box;
     background-clip: content-box, border-box;
@@ -218,7 +220,8 @@ html {
     content: '';
     position: relative;
     display: block;
-    border-bottom: 18px solid #acbfa4;
+    border-bottom: 18px solid #8afc5d
+    ;
     width: 21rem;
     margin: 0 auto;
     left: 3.5rem;
@@ -275,7 +278,8 @@ html {
     content: '';
     position: relative;
     display: block;
-    border-bottom: 2px solid #acbfa4;
+    border-bottom: 2px solid #8afc5d
+    ;
     width: calc(100% + 2rem);
     left: -14%;
     top: 0.5rem;
@@ -391,7 +395,8 @@ html {
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #acbfa4;
+    background-color: #8afc5d
+    ;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -461,7 +466,8 @@ html {
 
 
 .heading__line-1 span {
-    color: #acbfa4; 
+    color: #8afc5d
+    ; 
     font-weight: 400
 }
 
@@ -482,9 +488,11 @@ html {
     width: 27.5rem;
     height: 4.8rem;
     background-color: rgba(26,26,26,0.6);
-    border: 2px solid #acbfa4;
+    border: 2px solid #8afc5d
+    ;
     border-radius: 2px;
-    color: #acbfa4;
+    color: #8afc5d
+    ;
     font-size: 2.4rem;
     font-weight: 500;
     cursor: pointer;
@@ -502,7 +510,8 @@ html {
     width: 27.5rem;
     height: 4.8rem;
     border-radius: 3px;
-    border: 2px solid #acbfa4;
+    border: 2px solid #8afc5d
+    ;
     filter: blur(0);
     transform-origin: 50%;
     z-index: -1
@@ -536,7 +545,8 @@ html {
     width: 24px;
     margin-left: 15px;
     transform: rotate(90deg);
-    fill: #acbfa4;
+    fill: #8afc5d
+    ;
     transition: all 0.3s
 }
 
@@ -597,11 +607,13 @@ html {
 }
 
 .navigation__item--active {
-    color: #acbfa4
+    color: #8afc5d
+
 }
 
 .navigation__item:hover {
-    color: #acbfa4
+    color: #8afc5d
+
 }
 
 /* Projects container */
@@ -617,7 +629,8 @@ html {
   .projects__heading:before {
     content: '';
     position: absolute;
-    border-bottom: 18px solid #acbfa4;
+    border-bottom: 18px solid #8afc5d
+    ;
     width: 22.5rem;
     left: 3.5rem;
     top: 6.3rem;
@@ -699,6 +712,9 @@ html {
   
   .project__image-container:hover {
     transform: scale(0.95);
+    border: 2px solid #8afc5d;
+    box-shadow: 0 0 10px #8afc5d, 0 0 10px #8afc5d, 0 0 20px #8afc5d;
+    transition: all 0.3s ease-in-out;
   }
   
   
@@ -777,7 +793,7 @@ html {
 /* ========== ABOUT SECTION ========== */
 @media (max-width: 1500px) { .about { width: 1100px; } }
 @media (max-width: 1200px) { .about { width: auto; } }
-@media (max-width: 770px)  { .about__heading:before { border-bottom: 14px solid #acbfa4; } }
+@media (max-width: 770px)  { .about__heading:before { border-bottom: 14px solid #8afc5d; } }
 @media (max-width: 1300px) { .about__content { flex-direction: column; } }
 @media (max-width: 1301px) {
   .profile { margin-bottom: 10rem; left: 0; opacity: 1; }

@@ -19655,12 +19655,12 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
         const e = function() {
             const t = document.querySelector("canvas")
               , n = t.getContext("2d")
-              , r = ["rgb(81, 162, 233)", "rgb(81, 162, 233)", "rgb(81, 162, 233)", "rgb(81, 162, 233)", "rgb(255, 77, 90)"];
+              , r = [];
             t.width = document.body.scrollWidth,
             t.height = window.innerHeight,
             t.style.display = "block",
             n.lineWidth = .3,
-            n.strokeStyle = "rgb(81, 162, 233)";
+            n.strokeStyle = "rgb(138, 252, 93)";
             let o = {
                 x: 30 * t.width / 100,
                 y: 30 * t.height / 100
@@ -19725,7 +19725,7 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
                     );
                     n.closePath();
                     
-                    n.fillStyle = `rgba(124, 169, 130`;
+                    n.fillStyle = `rgba(138, 252, 93)`;
                 
                     
                     n.fill();
@@ -19736,6 +19736,7 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
                   animate: function() {
                     for (let e = 1; e < i.nb; e++) {
                       const dot = i.array[e];
+                      const VELOCITY_MULTIPLIER = 1.7;
                       
                       if (dot.y < 0 || dot.y > t.height) {
                         dot.vy = -dot.vy;
@@ -19745,8 +19746,8 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
                         dot.vx = -dot.vx;
                       }
                       
-                      dot.x += dot.vx;
-                      dot.y += dot.vy;
+                      dot.x += dot.vx * VELOCITY_MULTIPLIER;
+                      dot.y += dot.vy * VELOCITY_MULTIPLIER;
                     }
                   },
                   line: function() {
@@ -19792,7 +19793,7 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
                           // Adjust stroke transparency based on the distance from the arrow.
                           let lineFactor = Math.sqrt((dot1.x - o.x) ** 2 + (dot1.y - o.y) ** 2) / i.d_radius;
                           lineFactor = Math.max(lineFactor - 0.3, 0);
-                          n.strokeStyle = `rgba(124, 169, 130, ${1 - lineFactor})`;                          
+                          n.strokeStyle = `rgba(138, 252, 93, ${1 - lineFactor})`;                          
                           n.stroke();
                           n.closePath();
                         }
@@ -19821,7 +19822,7 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
                     e.create()
                 }
                 i.array[0].radius = 1.5,
-                i.array[0].colour = "#51a2e9",
+                i.array[0].colour = "#8afc5d",
                 e.line(),
                 e.animate()
             }
@@ -19835,12 +19836,12 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
           , r = function() {
             const e = document.querySelector(".canvas-2")
               , t = e.getContext("2d")
-              , n = [  `rgba(124, 169, 130)`];
+              , n = [  `rgba(138, 252, 93)`];
             e.width = document.body.scrollWidth,
             e.height = window.innerHeight,
             e.style.display = "block",
             t.lineWidth = .3,
-            t.strokeStyle = `rgba(124, 169, 130)`;
+            t.strokeStyle = `rgba(138, 252, 93)`;
             let o = {
                 x: 30 * e.width / 100,
                 y: 30 * e.height / 100
@@ -19891,11 +19892,12 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
                 animate: function() {
                     for (let t = 1; t < i.nb; t++) {
                         const n = i.array[t];
+                        const VELOCITY_MULTIPLIER = 1.7;
                         n.y < 0 || n.y > e.height ? (n.vx = n.vx,
                         n.vy = -n.vy) : (n.x < 0 || n.x > e.width) && (n.vx = -n.vx,
                         n.vy = n.vy),
-                        n.x += n.vx,
-                        n.y += n.vy
+                        n.x += n.vx * VELOCITY_MULTIPLIER,
+                        n.y += n.vy * VELOCITY_MULTIPLIER;
                     }
                 },
                 line: function() {
@@ -19910,7 +19912,7 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
                                 let e = ((r.x - o.x) ** 2 + (r.y - o.y) ** 2) ** .5 / i.d_radius;
                                 e -= .3,
                                 e < 0 && (e = 0),
-                                t.strokeStyle = `rgb(81, 162, 233, ${1 - e})`,
+                                t.strokeStyle = `rgb(138, 252, 93, ${1 - e})`,
                                 t.stroke(),
                                 t.closePath()
                             }
@@ -19932,7 +19934,7 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
                     n.create()
                 }
                 i.array[0].radius = 1.5,
-                i.array[0].colour = "#51a2e9",
+                i.array[0].colour = "#8afc5d",
                 n.animate()
             }
             ), 1e3 / 30);
@@ -19964,15 +19966,17 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
                 if (e.isIntersecting && document.body.scrollWidth > 1300) {
                     document.querySelector(".profile").classList.add("profile__fade-in");
                     const e = e => new Promise((t => setTimeout(t, e)));
-                    e(1e3).then(( () => {document.querySelector(".skills__item--html").classList.add("skills__item-fade-in")}
+                    e(1e3).then(( () => {document.querySelector(".skills__item--affinity").classList.add("skills__item-fade-in")}
                     )),
-                    e(1200).then(( () => {document.querySelector(".skills__item--js").classList.add("skills__item-fade-in")}
+                    e(1100).then(( () => {document.querySelector(".skills__item--figma").classList.add("skills__item-fade-in")}
                     )),
-                    e(1300).then(( () => {document.querySelector(".skills__item--git").classList.add("skills__item-fade-in")}
+                    e(1250).then(( () => {document.querySelector(".skills__item--HTML").classList.add("skills__item-fade-in")}
                     )),
-                    e(1600).then(( () => {document.querySelector(".skills__item--python").classList.add("skills__item-fade-in")}
+                    e(1350).then(( () => {document.querySelector(".skills__item--flutter").classList.add("skills__item-fade-in")}
                     )),
-                    e(1700).then(( () => {document.querySelector(".skills__item--flutter").classList.add("skills__item-fade-in")}
+                    e(1550).then(( () => {document.querySelector(".skills__item--python").classList.add("skills__item-fade-in")}
+                    )),
+                    e(1700).then(( () => {document.querySelector(".skills__item--js").classList.add("skills__item-fade-in")}
                     )),
                     e(1900).then(( () => {document.querySelector(".skills__item--css").classList.add("skills__item-fade-in")}
                     ))
