@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> AL's Portfolio Website</title>
+  <title>AL's Portfolio Website</title>
   <link rel="stylesheet" href="main.css" />
   <script defer src="main.js"></script>
 </head>
@@ -11,9 +11,9 @@
   <div class="intro-screen" id="intro-screen">
     <img src="assets/logo.gif" alt="Loading Logo" class="intro-logo" />
   </div>
-  
+
   <nav class="navigation-bar hidden" id="main-nav">
-    <ul class = "logo">
+    <ul class="logo">
       <img src="assets/logo.gif" alt="Logo" class="logo" />
     </ul>
     <ul class="navigation">
@@ -47,10 +47,10 @@
       <h2 class="about__heading section-heading">About</h2>
       <div class="about__content">
         <div class="profile">
-
-          <p class="profile__info">Hi, I’m Al Glenrey Tilacas, a third-year Computer Science student who enjoys working on front-end development and UI/UX design. I like building interfaces that aren’t just nice to look at; they should also feel good to use. I care about design that makes sense and genuinely respects the people using it.
-
-            For me, it’s not just about writing code or building something that works. It’s about creating something that feels right and solves real problems. I want the things I build to make someone’s day a little easier, more intuitive, or even a bit more enjoyable.</p>
+          <p class="profile__info">
+            Hi, I’m Al Glenrey Tilacas, a third-year Computer Science student who enjoys working on front-end development and UI/UX design. I like building interfaces that aren’t just nice to look at; they should also feel good to use. I care about design that makes sense and genuinely respects the people using it.
+            For me, it’s not just about writing code or building something that works. It’s about creating something that feels right and solves real problems. I want the things I build to make someone’s day a little easier, more intuitive, or even a bit more enjoyable.
+          </p>
         </div>
 
         <div class="skills">
@@ -60,10 +60,10 @@
               <div class="skills__item-name">Affinity</div>
             </div>
             <div class="skills__item skills__item--figma">
-              <img src="assets/figma.png" alt="Flutter" />
+              <img src="assets/figma.png" alt="Figma" />
               <div class="skills__item-name">Figma</div>
             </div>
-            </div>
+          </div>
           <div class="skills__row">
             <div class="skills__item skills__item--HTML">
               <img src="assets/html.png" alt="HTML" />
@@ -93,60 +93,64 @@
     </section>
 
     <!-- Projects Section -->
-<section class="projects" id="projects">
-  <h2 class="projects__heading section-heading">Projects</h2>
+    <section class="projects" id="projects">
+      <h2 class="projects__heading section-heading">Projects</h2>
 
-  <!-- Project 1 (Left) -->
-  <div class="project project-left">
-      <div class="project__image-container">
-        <img src="assets/smartcy.png" alt="Smart CY" />
+      <div class="project project-left">
+        <div class="project__image-container">
+          <img src="assets/smartcy.png" alt="Smart CY" />
+        </div>
+        <div class="project__info">
+          <h3 class="project__title">Smart CY<br/>Container Yard Management App</h3>
+          <p class="project__description">SMART CY is an Android-based mobile application optimized for tablets, designed to streamline and automate container yard operations. Built using Flutter for the frontend, .NET for backend services, integrated with Firebase Authentication, and utilizing MS SQL for cloud-based database operations, SMART CY offers real-time container tracking and efficient transaction management.</p>
+        </div>
       </div>
-    <div class="project__info">
-      <h3 class="project__title">Smart CY<br/>Container Yard Management App</h3>
-      <p class="project__description">SMART CY is an Android-based mobile application optimized for tablets, specifically designed to streamline and automate container yard operations. Built using Flutter for the frontend, .NET for backend services, integrated with Firebase Authentication for secure user management, and utilizing MS SQL for reliable cloud-based database operations, SMART CY provides real-time container tracking, efficient transaction management, and increased yard visibility.</p>
-    </div>
-  </div>
 
-  <!-- Project 2 (Right) -->
-  <div class="project project-right">
-      <div class="project__image-container">
-        <img src="assets/tigom.png" alt="Tigom" />
+      <div class="project project-right">
+        <div class="project__image-container">
+          <img src="assets/tigom.png" alt="Tigom" />
+        </div>
+        <div class="project__info">
+          <h3 class="project__title">TIGOM<br />Money Tracker App</h3>
+          <p class="project__description">A user-friendly personal finance application developed in Swift, integrated with SQL for efficient data management. The app helps users track expenses, categorize spending, and manage budgets through intuitive interfaces and reliable database interactions.</p>
+        </div>
       </div>
-    <div class="project__info">
-      <h3 class="project__title">TIGOM<br />Money Tracker App</h3>
-      <p class="project__description">A user-friendly personal finance application developed in Swift, integrated with SQL for efficient data management. The app helps users easily track expenses, categorize spending, and manage budgets through intuitive interfaces and reliable database interactions.</p>
-    </div>
-  </div>
-  
-  <!-- Project 3 (Left) -->
-  <div class="project project-left">
-    <div class="project__image-container">
-      <img src="assets/cooking.png" alt="Smart CY" />
-    </div>
-  <div class="project__info">
-    <h3 class="project__title">Cooking Ina Mo <br/> FSM Integrated Typing Game</h3>
-    <p class="project__description">An engaging culinary-themed typing game developed using Python and the Pygame library. The game utilizes Finite State Machines (FSMs) to handle dynamic state transitions, managing user interactions as players rapidly type food-related words to prepare dishes in a lively kitchen scenario.
 
+      <div class="project project-left">
+        <div class="project__image-container">
+          <img src="assets/cooking.png" alt="Cooking Ina Mo" />
+        </div>
+        <div class="project__info">
+          <h3 class="project__title">Cooking Ina Mo<br/>FSM Integrated Typing Game</h3>
+          <p class="project__description">An engaging culinary-themed typing game developed using Python and Pygame. The game utilizes Finite State Machines (FSMs) to handle dynamic state transitions, managing user interactions as players rapidly type food-related words to prepare dishes in a lively kitchen scenario.</p>
+        </div>
+      </div>
+    </section>
 
-</p>
-  </div>
-</div>
-  
-</section>=
-    <!-- Contact Section -->
-   <!-- Contact Section -->
-<section class="contact" id="contact">
-  <h2 class="contact__heading section-heading">Contact</h2>
-  <p class="contact__text">Whether you have a question or simply want to connect, feel free to reach out. I’ll do my best to respond as soon as possible.</p>
-
-  <!-- Contact form -->
-  <input class="contact__form-name" id="contact-name" placeholder="Name" />
-  <input class="contact__form-email" id="contact-email" type="email" placeholder="Email" />
-  <textarea class="contact__form-message" id="contact-message" placeholder="Message"></textarea>
-  
-  <button type="button" class="contact__form-submit project__live-2" id="form-submit">Submit</button>
-</section>
-
+    <section class="contact" id="contact">
+      <h2 class="contact__heading section-heading">Contact</h2>
+      <p class="contact__text">
+        Whether you have a question or simply want to connect, feel free to reach out. I’ll do my best to respond as soon as possible.
+      </p>
+    
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contact-form">
+        <input type="hidden" name="access_key" value="dd26e7bf-2841-4a79-9711-b8ee0e4d801d" />
+        <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html" /> <!-- optional -->
+    
+        <input class="contact__form-name" name="user_name" placeholder="Name" required />
+        <input class="contact__form-email" name="user_email" type="email" placeholder="Email" required />
+        <textarea class="contact__form-message" name="message" placeholder="Message" required></textarea>
+    
+        <!-- Google reCAPTCHA v2 widget -->
+        <div class="g-recaptcha" data-sitekey="6LduIyYrAAAAAAJxUJlHzcASuDbJdUb6_XIX0EHM"></div>
+    
+        <button type="submit" class="contact__form-submit">Submit</button>
+      </form>
+    
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </section>
+    
+    
 
     <!-- Footer -->
     <footer class="footer">
@@ -164,6 +168,6 @@
       <p class="name">AL GLENREY TILACAS</p>
     </footer>
   </div>
-  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

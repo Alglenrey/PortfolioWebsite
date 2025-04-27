@@ -686,37 +686,40 @@ html {
  
   /* Project image */
   .project__image-container {
-    flex-basis: 50%; /* slightly wider portion */
-    width: 100%;
-    max-width: 110rem; /* increased from 100rem */
-    height: auto;
-    aspect-ratio: 16 / 10; 
-    background-color: transparent;
-    overflow: hidden;
-    transition: all 0.2s;
-    cursor: pointer;
-    margin-right: 0;
-    border-radius: 12px;
-  }
+    /* — size & ratio — */
+    flex: 1 1 45%;              /* take up ~45% of the row, but shrink/grow nicely */
+    max-width: 110rem;          /* cap its width */
+    aspect-ratio: 16 / 10;      /* force a 16:10 box */
+    
+    /* — cropping & centering — */
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    overflow: hidden;           /* hide any overflow from object-fit */
   
+    /* — style — */
+    background-color: transparent;
+    border-radius: 12px;
+    transition: transform .2s ease, box-shadow .3s ease, border .3s ease;
+    cursor: pointer;
+  }
   
   .project__image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-    object-fit: contain;
-    display: block;
+    /* fill the box, cropping as necessary */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* or “contain” if you’d rather see the whole image letter-boxed */
+    object-position: center;
+    display: block;            /* remove any inline-block gaps */
   }
-  
   
   .project__image-container:hover {
     transform: scale(0.95);
     border: 2px solid #8afc5d;
-    box-shadow: 0 0 10px #8afc5d, 0 0 10px #8afc5d, 0 0 20px #8afc5d;
-    transition: all 0.3s ease-in-out;
+    box-shadow:
+      0 0 10px #8afc5d,
+      0 0 20px #8afc5d;
   }
-  
   
   .project__info {
     flex: 1 1 50%;
