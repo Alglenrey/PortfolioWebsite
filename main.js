@@ -20110,14 +20110,20 @@ if (performance.navigation.type === 1 || performance.getEntriesByType("navigatio
       
       document.addEventListener('DOMContentLoaded', function() {
         const form = document.getElementById('contact-form');
-        form.addEventListener('submit', function(event) {
-          const response = grecaptcha.getResponse();
-          if (response.length === 0) {
-            event.preventDefault();
-            alert('Please confirm the reCAPTCHA checkbox.');
-          }
-        });
-    });
+        const submitButton = document.getElementById('form-submit');
+  
+        if (form) {
+          form.addEventListener('submit', function(event) {
+            const hcaptchaResponse = hcaptcha.getResponse();
+            if (!hcaptchaResponse) {
+              event.preventDefault(); // Stop the form submission
+              hcaptcha.execute();     // Force the user to solve hCaptcha
+            }
+          });
+        }
+      });
+  
+     
 }
 )();
   

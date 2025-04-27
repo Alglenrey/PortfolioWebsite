@@ -126,31 +126,33 @@
         </div>
       </div>
     </section>
+  
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2 class="contact__heading section-heading">Contact</h2>
+  <p class="contact__text">
+    Whether you have a question or simply want to connect, feel free to reach out. I’ll do my best to respond as soon as possible.
+  </p>
 
-    <section class="contact" id="contact">
-      <h2 class="contact__heading section-heading">Contact</h2>
-      <p class="contact__text">
-        Whether you have a question or simply want to connect, feel free to reach out. I’ll do my best to respond as soon as possible.
-      </p>
-    
-      <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contact-form">
-        <input type="hidden" name="access_key" value="dd26e7bf-2841-4a79-9711-b8ee0e4d801d" />
-        <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html" /> <!-- optional -->
-    
-        <input class="contact__form-name" name="user_name" placeholder="Name" required />
-        <input class="contact__form-email" name="user_email" type="email" placeholder="Email" required />
-        <textarea class="contact__form-message" name="message" placeholder="Message" required></textarea>
-    
-        <!-- Google reCAPTCHA v2 widget -->
-        <div class="g-recaptcha" data-sitekey="6LduIyYrAAAAAAJxUJlHzcASuDbJdUb6_XIX0EHM"></div>
-    
-        <button type="submit" class="contact__form-submit">Submit</button>
-      </form>
-    
-      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    </section>
-    
-    
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contact-form">
+    <input type="hidden" name="access_key" value="dd26e7bf-2841-4a79-9711-b8ee0e4d801d" />
+    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+    <input type="checkbox" name="botcheck" style="display:none;" />
+
+    <input class="contact__form-name" name="user_name" id="contact-name" placeholder="Name" required />
+    <input class="contact__form-email" name="user_email" id="contact-email" type="email" placeholder="Email" required />
+    <textarea class="contact__form-message" name="message" id="contact-message" placeholder="Message" required></textarea>
+
+    <!-- hCaptcha widget -->
+    <div class="h-captcha" data-sitekey="0cdef136-4e2c-45e0-82ae-5ffa4192cb54"></div>
+
+    <button type="submit" class="contact__form-submit project__live-2" id="form-submit">Submit</button>
+  </form>
+
+  <!-- hCaptcha API -->
+  <script src="https://hcaptcha.com/1/api.js" async defer></script>
+  
+</section>
 
     <!-- Footer -->
     <footer class="footer">
